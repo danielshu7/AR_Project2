@@ -11,11 +11,10 @@ public class VirtualButtonEventHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("First Check: " + Vb.VirtualButtonName);
         Vb.RegisterOnButtonPressed(OnButtonPressed);
         Vb.RegisterOnButtonReleased(OnButtonReleased);
 
-        bookInfo.SetActive(false);
+        bookInfo.SetActive(true);
     }
 
     public void OnButtonPressed(VirtualButtonBehaviour vb)
